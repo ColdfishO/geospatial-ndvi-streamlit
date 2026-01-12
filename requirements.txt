@@ -1,0 +1,5 @@
+streamlit
+geopandas
+rasterio
+numpy
+shapely
