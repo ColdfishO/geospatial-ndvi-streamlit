@@ -1,5 +1,8 @@
 streamlit
 geopandas
 rasterio
-numpy
 shapely
+folium
+streamlit-folium
+numpy
+pandas
