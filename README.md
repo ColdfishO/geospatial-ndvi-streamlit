@@ -1,19 +1,19 @@
-# Geospatial NDVI Streamlit App
+# Geospatial CVI Streamlit App
 
 Aplikacja umożliwia:
-- wczytywanie danych wektorowych (GeoJSON)
-- wczytywanie dwóch rastrów (B04 – RED, B08 – NIR)
-- obliczanie indeksu NDVI
-- wyznaczanie średniej NDVI dla obiektów wektorowych
 
-## Uruchomienie lokalne
+- wczytywanie danych wektorowych (GeoJSON)  
+- wczytywanie trzech rastrów Sentinel-2:  
+  - B03 (GREEN)  
+  - B04 (RED)  
+  - B08 (NIR)  
+- obliczanie wskaźnika **Chlorophyll Vegetation Index (CVI)**  
+- wyznaczanie średniej CVI dla obiektów wektorowych  
 
-pip install -r requirements.txt
-streamlit run app.py
+## Wymagania
 
-## Uruchomienie w Dockerze
+- Python 3.10+  
+- biblioteki: `streamlit`, `geopandas`, `rasterio`, `numpy`, `shapely`, `folium`, `streamlit-folium`  
 
-docker-compose up --build
+Przykładowy `requirements.txt`:
 
-Aplikacja dostępna pod:
-http://localhost:8501
